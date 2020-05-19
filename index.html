@@ -27,9 +27,6 @@
 
 
     <style>
-      .newclass {
-        font-size: 1.125rem !important;
-      }
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -47,6 +44,10 @@
     </style>
     <!-- Custom styles for this template -->
     <link href="jumbotron.css" rel="stylesheet">
+    <script>
+      var dateObject = document.getElementById("date");
+      dateObject.innerHTML = "Hello";
+    </script>
   </head>
   <body>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
@@ -84,8 +85,8 @@
   <!-- Main jumbotron for a primary marketing message or call to action --> #title
   <div class="jumbotron">
     <div class="container">
-      <h1 class="display-3 newclass">title text</h1>
-      <p>sample text</p>
+      <h1 class="display-3">title text</h1>
+      <p id="date">sample text</p>
       <img src="https://unsplash.com/photos/xG8IQMqMITM" alt="Writing Picture">
     </div>
   </div>
