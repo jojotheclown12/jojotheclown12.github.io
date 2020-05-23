@@ -85,9 +85,17 @@
     </div>
   </div>
   <script type="text/javascript">
+    var image_tracker = "p";
     function change() {
       var image = document.getElementById("pen");
-      image.src = "https://66.media.tumblr.com/6ca78ac915319331d804f127ce408bed/tumblr_p3mp7nFFpo1uz7ywwo3_250.jpg";
+      if (image_tracker = "p") {
+        image.src = "https://66.media.tumblr.com/6ca78ac915319331d804f127ce408bed/tumblr_p3mp7nFFpo1uz7ywwo3_250.jpg";
+        image_tracker = "c";
+      } else {
+        image.src = "https://images.unsplash.com/photo-1471107340929-a87cd0f5b5f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1266&q=80";
+        image_tracker = "p";
+      }
+
     }
   </script>
   <div class="container">
